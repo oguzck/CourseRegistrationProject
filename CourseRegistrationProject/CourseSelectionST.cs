@@ -18,7 +18,7 @@ namespace CourseRegistrationProject
         {
             InitializeComponent();
             GetCourses();
-            MessageBox.Show("You have preliminary payment : 1000$");
+            
 
 
 

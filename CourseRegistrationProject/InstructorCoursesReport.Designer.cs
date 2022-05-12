@@ -47,7 +47,7 @@ namespace CourseRegistrationProject
             this.dataGridView1.Location = new System.Drawing.Point(186, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(403, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(403, 232);
             this.dataGridView1.TabIndex = 0;
             // 
             // InstructorID
@@ -71,11 +71,12 @@ namespace CourseRegistrationProject
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(285, 43);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(211, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(337, 42);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "Instructor \' s Given Courses";
             // 
             // InstructorCoursesReport
             // 

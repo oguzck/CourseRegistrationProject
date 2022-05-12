@@ -30,12 +30,12 @@ namespace CourseRegistrationProject
         private void InitializeComponent()
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnCoursesStudent = new System.Windows.Forms.Button();
             this.btnInstCourse = new System.Windows.Forms.Button();
             this.btnStdPayment = new System.Windows.Forms.Button();
             this.btnStdCourse = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCoursesStudent = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,8 +50,23 @@ namespace CourseRegistrationProject
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(800, 77);
+            this.pnlHeader.Size = new System.Drawing.Size(810, 77);
             this.pnlHeader.TabIndex = 0;
+            // 
+            // btnCoursesStudent
+            // 
+            this.btnCoursesStudent.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCoursesStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCoursesStudent.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCoursesStudent.Location = new System.Drawing.Point(620, 25);
+            this.btnCoursesStudent.Name = "btnCoursesStudent";
+            this.btnCoursesStudent.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCoursesStudent.Size = new System.Drawing.Size(158, 27);
+            this.btnCoursesStudent.TabIndex = 3;
+            this.btnCoursesStudent.Text = "Courses-Student";
+            this.btnCoursesStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCoursesStudent.UseVisualStyleBackColor = false;
+            this.btnCoursesStudent.Click += new System.EventHandler(this.btnCoursesStudent_Click);
             // 
             // btnInstCourse
             // 
@@ -105,7 +120,7 @@ namespace CourseRegistrationProject
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 373);
+            this.panel1.Size = new System.Drawing.Size(810, 381);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -118,26 +133,11 @@ namespace CourseRegistrationProject
             this.label1.TabIndex = 0;
             this.label1.Text = "REPORTS";
             // 
-            // btnCoursesStudent
-            // 
-            this.btnCoursesStudent.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnCoursesStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCoursesStudent.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCoursesStudent.Location = new System.Drawing.Point(620, 25);
-            this.btnCoursesStudent.Name = "btnCoursesStudent";
-            this.btnCoursesStudent.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCoursesStudent.Size = new System.Drawing.Size(158, 27);
-            this.btnCoursesStudent.TabIndex = 3;
-            this.btnCoursesStudent.Text = "Courses-Student";
-            this.btnCoursesStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCoursesStudent.UseVisualStyleBackColor = false;
-            this.btnCoursesStudent.Click += new System.EventHandler(this.btnCoursesStudent_Click);
-            // 
             // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(810, 458);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

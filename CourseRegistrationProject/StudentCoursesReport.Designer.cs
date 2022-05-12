@@ -46,7 +46,7 @@ namespace CourseRegistrationProject
             this.StudentName,
             this.Term,
             this.NmbOfTknCourses});
-            this.dataGridView1.Location = new System.Drawing.Point(166, 127);
+            this.dataGridView1.Location = new System.Drawing.Point(173, 119);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(443, 232);
@@ -76,7 +76,7 @@ namespace CourseRegistrationProject
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(127, 44);
+            this.label1.Location = new System.Drawing.Point(148, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(541, 45);
             this.label1.TabIndex = 1;
@@ -89,7 +89,7 @@ namespace CourseRegistrationProject
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "StudentCoursesReport";
-            this.Size = new System.Drawing.Size(793, 448);
+            this.Size = new System.Drawing.Size(810, 381);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

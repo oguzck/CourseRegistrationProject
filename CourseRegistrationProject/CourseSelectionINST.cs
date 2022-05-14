@@ -16,7 +16,7 @@ namespace CourseRegistrationProject
         public CourseSelectionINST()
         {
             InitializeComponent();
-            GetCourses();
+           // GetCourses();
         }
         private void GetCourses()
         {
@@ -42,10 +42,5 @@ namespace CourseRegistrationProject
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            MessageBox.Show("Kaydedildi");
-            dataGridView1.Enabled = false;
-        }
     }
 }

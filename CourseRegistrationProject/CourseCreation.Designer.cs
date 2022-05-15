@@ -42,42 +42,47 @@ namespace CourseRegistrationProject
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(241, 145);
+            this.label1.Location = new System.Drawing.Point(344, 242);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 15);
+            this.label1.Size = new System.Drawing.Size(133, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Course Name : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(241, 214);
+            this.label2.Location = new System.Drawing.Point(344, 357);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 15);
+            this.label2.Size = new System.Drawing.Size(63, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Price : ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(241, 274);
+            this.label3.Location = new System.Drawing.Point(344, 457);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.Size = new System.Drawing.Size(99, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Semester : ";
             // 
             // txtCourseName
             // 
-            this.txtCourseName.Location = new System.Drawing.Point(374, 145);
+            this.txtCourseName.Location = new System.Drawing.Point(534, 242);
+            this.txtCourseName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(161, 23);
+            this.txtCourseName.Size = new System.Drawing.Size(228, 31);
             this.txtCourseName.TabIndex = 1;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(374, 206);
+            this.txtPrice.Location = new System.Drawing.Point(534, 343);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(161, 23);
+            this.txtPrice.Size = new System.Drawing.Size(228, 31);
             this.txtPrice.TabIndex = 2;
             // 
             // cbSemester
@@ -86,34 +91,38 @@ namespace CourseRegistrationProject
             this.cbSemester.Items.AddRange(new object[] {
             "Spring",
             "Fall"});
-            this.cbSemester.Location = new System.Drawing.Point(374, 274);
+            this.cbSemester.Location = new System.Drawing.Point(534, 457);
+            this.cbSemester.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbSemester.Name = "cbSemester";
-            this.cbSemester.Size = new System.Drawing.Size(161, 23);
+            this.cbSemester.Size = new System.Drawing.Size(228, 33);
             this.cbSemester.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(398, 45);
+            this.label4.Location = new System.Drawing.Point(569, 75);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 15);
+            this.label4.Size = new System.Drawing.Size(138, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Course Creation";
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(398, 360);
+            this.btnCreate.Location = new System.Drawing.Point(569, 600);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 23);
+            this.btnCreate.Size = new System.Drawing.Size(107, 38);
             this.btnCreate.TabIndex = 4;
             this.btnCreate.Text = "&Create";
             this.btnCreate.UseVisualStyleBackColor = true;
             // 
             // CourseCreation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbSemester);
@@ -123,6 +132,7 @@ namespace CourseRegistrationProject
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CourseCreation";
             this.Text = "AdminPanel";
             this.ResumeLayout(false);

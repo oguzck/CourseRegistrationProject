@@ -43,6 +43,7 @@ namespace CourseRegistrationProject
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.Controls.Add(this.btnEnter);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cbDepartment);

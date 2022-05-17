@@ -42,7 +42,7 @@ namespace CourseRegistrationProject
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.SystemColors.Info;
+            this.pnlHeader.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlHeader.Controls.Add(this.btnCoursesStudent);
             this.pnlHeader.Controls.Add(this.btnInstCourse);
             this.pnlHeader.Controls.Add(this.btnStdPayment);
@@ -115,7 +115,7 @@ namespace CourseRegistrationProject
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Peru;
+            this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 77);

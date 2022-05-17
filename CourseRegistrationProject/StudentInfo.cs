@@ -16,5 +16,7 @@ namespace CourseRegistrationProject
         {
             InitializeComponent();
         }
+
+        
     }
 }

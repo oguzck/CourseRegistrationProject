@@ -60,115 +60,127 @@ namespace CourseRegistrationProject
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(124, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.Size = new System.Drawing.Size(52, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(124, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 15);
+            this.label2.Size = new System.Drawing.Size(74, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Surname :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(353, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 15);
+            this.label3.Size = new System.Drawing.Size(44, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Age : ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(353, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 15);
+            this.label4.Size = new System.Drawing.Size(95, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Department : ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(124, 258);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.Size = new System.Drawing.Size(67, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "Courses :";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblName.Location = new System.Drawing.Point(224, 119);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(38, 15);
+            this.lblName.Size = new System.Drawing.Size(42, 19);
             this.lblName.TabIndex = 6;
             this.lblName.Text = "label6";
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
+            this.lblSurname.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSurname.Location = new System.Drawing.Point(224, 186);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(38, 15);
+            this.lblSurname.Size = new System.Drawing.Size(42, 19);
             this.lblSurname.TabIndex = 7;
             this.lblSurname.Text = "label6";
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(428, 120);
+            this.lblAge.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAge.Location = new System.Drawing.Point(460, 124);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(38, 15);
+            this.lblAge.Size = new System.Drawing.Size(42, 19);
             this.lblAge.TabIndex = 8;
             this.lblAge.Text = "label6";
             // 
             // lblDepartment
             // 
             this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Location = new System.Drawing.Point(451, 186);
+            this.lblDepartment.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDepartment.Location = new System.Drawing.Point(460, 191);
             this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(38, 15);
+            this.lblDepartment.Size = new System.Drawing.Size(42, 19);
             this.lblDepartment.TabIndex = 9;
             this.lblDepartment.Text = "label6";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(334, 29);
+            this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(311, 30);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 15);
+            this.label6.Size = new System.Drawing.Size(172, 29);
             this.label6.TabIndex = 10;
             this.label6.Text = "Student Information";
             // 
             // CurrentTerm
             // 
             this.CurrentTerm.AutoSize = true;
+            this.CurrentTerm.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CurrentTerm.Location = new System.Drawing.Point(353, 258);
             this.CurrentTerm.Name = "CurrentTerm";
-            this.CurrentTerm.Size = new System.Drawing.Size(85, 15);
+            this.CurrentTerm.Size = new System.Drawing.Size(104, 23);
             this.CurrentTerm.TabIndex = 11;
             this.CurrentTerm.Text = "Current Term : ";
             // 
             // lblTerm
             // 
             this.lblTerm.AutoSize = true;
-            this.lblTerm.Location = new System.Drawing.Point(451, 258);
+            this.lblTerm.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTerm.Location = new System.Drawing.Point(460, 263);
             this.lblTerm.Name = "lblTerm";
-            this.lblTerm.Size = new System.Drawing.Size(38, 15);
+            this.lblTerm.Size = new System.Drawing.Size(42, 19);
             this.lblTerm.TabIndex = 12;
             this.lblTerm.Text = "label7";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(185, 255);
+            this.comboBox1.Location = new System.Drawing.Point(197, 258);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 13;
@@ -177,6 +189,7 @@ namespace CourseRegistrationProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblTerm);
             this.Controls.Add(this.CurrentTerm);

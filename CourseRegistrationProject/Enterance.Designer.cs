@@ -60,23 +60,24 @@ namespace CourseRegistrationProject
             // 
             // btnEnter
             // 
+            this.btnEnter.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEnter.Location = new System.Drawing.Point(327, 362);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(75, 23);
             this.btnEnter.TabIndex = 15;
-            this.btnEnter.Text = "Enter";
+            this.btnEnter.Text = "&Enter";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sitka Subheading", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(327, 70);
+            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(351, 71);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 30);
+            this.label4.Size = new System.Drawing.Size(68, 29);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Enterance";
+            this.label4.Text = "Sign in";
             // 
             // cbDepartment
             // 
@@ -107,27 +108,30 @@ namespace CourseRegistrationProject
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPassword.Location = new System.Drawing.Point(203, 277);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(63, 15);
+            this.lblPassword.Size = new System.Drawing.Size(67, 19);
             this.lblPassword.TabIndex = 10;
             this.lblPassword.Text = "Password :";
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblID.Location = new System.Drawing.Point(203, 217);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(38, 15);
+            this.lblID.Size = new System.Drawing.Size(42, 19);
             this.lblID.TabIndex = 9;
             this.lblID.Text = "label2";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(203, 158);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 15);
+            this.label1.Size = new System.Drawing.Size(164, 19);
             this.label1.TabIndex = 8;
             this.label1.Text = "Choose Student or Instructor ";
             // 

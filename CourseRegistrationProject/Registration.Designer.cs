@@ -29,6 +29,7 @@ namespace CourseRegistrationProject
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
@@ -50,6 +51,7 @@ namespace CourseRegistrationProject
             this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,9 +87,10 @@ namespace CourseRegistrationProject
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
+            this.rbFemale.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rbFemale.Location = new System.Drawing.Point(679, 131);
             this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(63, 19);
+            this.rbFemale.Size = new System.Drawing.Size(66, 23);
             this.rbFemale.TabIndex = 10;
             this.rbFemale.TabStop = true;
             this.rbFemale.Text = "Female";
@@ -96,9 +99,10 @@ namespace CourseRegistrationProject
             // rbMale
             // 
             this.rbMale.AutoSize = true;
+            this.rbMale.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rbMale.Location = new System.Drawing.Point(542, 131);
             this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(51, 19);
+            this.rbMale.Size = new System.Drawing.Size(53, 23);
             this.rbMale.TabIndex = 9;
             this.rbMale.TabStop = true;
             this.rbMale.Text = "Male";
@@ -107,26 +111,29 @@ namespace CourseRegistrationProject
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(421, 132);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 15);
+            this.label8.Size = new System.Drawing.Size(55, 19);
             this.label8.TabIndex = 24;
             this.label8.Text = "Gender : ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(421, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 15);
+            this.label7.Size = new System.Drawing.Size(84, 19);
             this.label7.TabIndex = 23;
             this.label7.Text = "Date of Birth : ";
             // 
             // dtpDateOfBirth
             // 
+            this.dtpDateOfBirth.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDateOfBirth.Location = new System.Drawing.Point(542, 72);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
-            this.dtpDateOfBirth.Size = new System.Drawing.Size(200, 23);
+            this.dtpDateOfBirth.Size = new System.Drawing.Size(200, 27);
             this.dtpDateOfBirth.TabIndex = 8;
             // 
             // txtPassword
@@ -153,27 +160,30 @@ namespace CourseRegistrationProject
             // lblYear
             // 
             this.lblYear.AutoSize = true;
+            this.lblYear.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblYear.Location = new System.Drawing.Point(53, 331);
             this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(35, 15);
+            this.lblYear.Size = new System.Drawing.Size(38, 19);
             this.lblYear.TabIndex = 21;
             this.lblYear.Text = "Year :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(50, 234);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 15);
+            this.label6.Size = new System.Drawing.Size(70, 19);
             this.label6.TabIndex = 20;
             this.label6.Text = "Password : ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(53, 285);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 15);
+            this.label5.Size = new System.Drawing.Size(38, 19);
             this.label5.TabIndex = 19;
             this.label5.Text = "Type :";
             // 
@@ -192,9 +202,10 @@ namespace CourseRegistrationProject
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(53, 180);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 15);
+            this.label4.Size = new System.Drawing.Size(80, 19);
             this.label4.TabIndex = 17;
             this.label4.Text = "Department : ";
             // 
@@ -212,13 +223,15 @@ namespace CourseRegistrationProject
             this.txtIDNumber.Name = "txtIDNumber";
             this.txtIDNumber.Size = new System.Drawing.Size(170, 23);
             this.txtIDNumber.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.txtIDNumber, "8 digit number");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(53, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 15);
+            this.label3.Size = new System.Drawing.Size(101, 19);
             this.label3.TabIndex = 14;
             this.label3.Text = "Identity Number : ";
             // 
@@ -228,13 +241,15 @@ namespace CourseRegistrationProject
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(170, 23);
             this.txtSurname.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.txtSurname, "Surname");
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(53, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 15);
+            this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 12;
             this.label2.Text = "Surname : ";
             // 
@@ -244,18 +259,21 @@ namespace CourseRegistrationProject
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(170, 23);
             this.txtName.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.txtName, "Name");
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(53, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.Size = new System.Drawing.Size(45, 19);
             this.label1.TabIndex = 10;
             this.label1.Text = "Name :";
             // 
             // btnRegister
             // 
+            this.btnRegister.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.Location = new System.Drawing.Point(357, 415);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
@@ -305,5 +323,6 @@ namespace CourseRegistrationProject
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

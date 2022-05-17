@@ -60,7 +60,7 @@ namespace CourseRegistrationProject
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.BackColor = System.Drawing.Color.Peru;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(202, 0);
@@ -71,7 +71,7 @@ namespace CourseRegistrationProject
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Info;
+            this.label1.BackColor = System.Drawing.Color.Peru;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(229, 2);
             this.label1.Name = "label1";
@@ -158,7 +158,7 @@ namespace CourseRegistrationProject
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(321, 62);
+            this.label2.Location = new System.Drawing.Point(351, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 45);
             this.label2.TabIndex = 1;

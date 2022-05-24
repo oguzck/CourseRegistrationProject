@@ -37,13 +37,9 @@ namespace CourseRegistrationProject
             this.label7 = new System.Windows.Forms.Label();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.cbYear = new System.Windows.Forms.ComboBox();
-            this.lblYear = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbType = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbDepartment = new System.Windows.Forms.ComboBox();
             this.txtIDNumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSurname = new System.Windows.Forms.TextBox();
@@ -64,13 +60,9 @@ namespace CourseRegistrationProject
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.dtpDateOfBirth);
             this.groupBox1.Controls.Add(this.txtPassword);
-            this.groupBox1.Controls.Add(this.cbYear);
-            this.groupBox1.Controls.Add(this.lblYear);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cbType);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.cbDepartment);
             this.groupBox1.Controls.Add(this.txtIDNumber);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtSurname);
@@ -138,40 +130,17 @@ namespace CourseRegistrationProject
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(185, 226);
+            this.txtPassword.Location = new System.Drawing.Point(185, 180);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(170, 23);
             this.txtPassword.TabIndex = 5;
             // 
-            // cbYear
-            // 
-            this.cbYear.FormattingEnabled = true;
-            this.cbYear.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.cbYear.Location = new System.Drawing.Point(185, 328);
-            this.cbYear.Name = "cbYear";
-            this.cbYear.Size = new System.Drawing.Size(170, 23);
-            this.cbYear.TabIndex = 7;
-            // 
-            // lblYear
-            // 
-            this.lblYear.AutoSize = true;
-            this.lblYear.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblYear.Location = new System.Drawing.Point(53, 331);
-            this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(38, 19);
-            this.lblYear.TabIndex = 21;
-            this.lblYear.Text = "Year :";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(50, 234);
+            this.label6.Location = new System.Drawing.Point(53, 184);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 19);
             this.label6.TabIndex = 20;
@@ -181,7 +150,7 @@ namespace CourseRegistrationProject
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(53, 285);
+            this.label5.Location = new System.Drawing.Point(60, 244);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 19);
             this.label5.TabIndex = 19;
@@ -193,29 +162,10 @@ namespace CourseRegistrationProject
             this.cbType.Items.AddRange(new object[] {
             "Student",
             "Instructor"});
-            this.cbType.Location = new System.Drawing.Point(185, 277);
+            this.cbType.Location = new System.Drawing.Point(185, 240);
             this.cbType.Name = "cbType";
             this.cbType.Size = new System.Drawing.Size(170, 23);
             this.cbType.TabIndex = 6;
-            this.cbType.SelectedIndexChanged += new System.EventHandler(this.cbType_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(53, 180);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 19);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Department : ";
-            // 
-            // cbDepartment
-            // 
-            this.cbDepartment.FormattingEnabled = true;
-            this.cbDepartment.Location = new System.Drawing.Point(185, 172);
-            this.cbDepartment.Name = "cbDepartment";
-            this.cbDepartment.Size = new System.Drawing.Size(170, 23);
-            this.cbDepartment.TabIndex = 4;
             // 
             // txtIDNumber
             // 
@@ -305,8 +255,6 @@ namespace CourseRegistrationProject
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbType;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbDepartment;
         private System.Windows.Forms.TextBox txtIDNumber;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSurname;
@@ -314,8 +262,6 @@ namespace CourseRegistrationProject
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.ComboBox cbYear;
-        private System.Windows.Forms.Label lblYear;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.RadioButton rbFemale;

@@ -37,13 +37,15 @@ namespace CourseRegistrationProject
             this.cbSemester = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCourseCode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(241, 145);
+            this.label1.Location = new System.Drawing.Point(241, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 19);
             this.label1.TabIndex = 0;
@@ -71,14 +73,14 @@ namespace CourseRegistrationProject
             // 
             // txtCourseName
             // 
-            this.txtCourseName.Location = new System.Drawing.Point(374, 145);
+            this.txtCourseName.Location = new System.Drawing.Point(374, 159);
             this.txtCourseName.Name = "txtCourseName";
             this.txtCourseName.Size = new System.Drawing.Size(161, 23);
             this.txtCourseName.TabIndex = 1;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(374, 206);
+            this.txtPrice.Location = new System.Drawing.Point(374, 215);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(161, 23);
             this.txtPrice.TabIndex = 2;
@@ -113,6 +115,24 @@ namespace CourseRegistrationProject
             this.btnCreate.TabIndex = 4;
             this.btnCreate.Text = "&Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(241, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 19);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Course Code :";
+            // 
+            // txtCourseCode
+            // 
+            this.txtCourseCode.Location = new System.Drawing.Point(374, 107);
+            this.txtCourseCode.Name = "txtCourseCode";
+            this.txtCourseCode.Size = new System.Drawing.Size(161, 23);
+            this.txtCourseCode.TabIndex = 8;
             // 
             // CourseCreation
             // 
@@ -120,6 +140,8 @@ namespace CourseRegistrationProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCourseCode);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbSemester);
@@ -146,5 +168,7 @@ namespace CourseRegistrationProject
         private System.Windows.Forms.ComboBox cbSemester;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCourseCode;
     }
 }

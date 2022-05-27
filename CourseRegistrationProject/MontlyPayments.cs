@@ -14,7 +14,7 @@ namespace CourseRegistrationProject
 {
     public partial class MontlyPayments : UserControl
     {
-        public MontlyPayments()
+        public MontlyPayments(String ID)
         {
             InitializeComponent();
             MessageBox.Show("You have preliminary payment : 1000$");

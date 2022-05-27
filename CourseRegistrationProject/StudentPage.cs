@@ -7,16 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace CourseRegistrationProject
 {
     public partial class StudentPage : UserControl
     {
-        public StudentPage(String ID )
+        SqlConnection conn;
+        SqlCommand com = new SqlCommand();
+        string _id = "";
+        public StudentPage(String ID)
         {
+            _id = ID;
+            String ConnectionString = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
+            conn = new SqlConnection(ConnectionString);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT STD_FNAME FROM STUDENT WHERE STUDENT_ID='" + ID + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            String name = dt.Rows[0][0].ToString(); 
             InitializeComponent();
-            label2.Text = ID;
+            label2.Text = name;
+
+
         }
+        
         public void loadForm3(UserControl userControl)
         {
 
@@ -30,17 +45,17 @@ namespace CourseRegistrationProject
 
         private void btnCourseSelection_Click(object sender, EventArgs e)
         {
-            loadForm3(new CourseSelectionST());
+            loadForm3(new CourseSelectionST(_id));
         }
 
         private void btnMonthlyPayments_Click(object sender, EventArgs e)
         {
-            loadForm3(new MontlyPayments());
+            loadForm3(new MontlyPayments(_id));
         }
 
         private void btnStudentInfo_Click(object sender, EventArgs e)
         {
-            loadForm3(new StudentInfo());
+            loadForm3(new StudentInfo(_id));
         }
 
 

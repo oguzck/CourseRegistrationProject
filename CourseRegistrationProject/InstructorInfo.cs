@@ -12,7 +12,7 @@ namespace CourseRegistrationProject
 {
     public partial class InstructorInfo : UserControl
     {
-        public InstructorInfo()
+        public InstructorInfo(string ID)
         {
             InitializeComponent();
         }

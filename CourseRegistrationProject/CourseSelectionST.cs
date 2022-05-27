@@ -14,10 +14,11 @@ namespace CourseRegistrationProject
     public partial class CourseSelectionST : UserControl
     {
         
-        public CourseSelectionST()
+        public CourseSelectionST(String ID)
         {
             InitializeComponent();
             GetCourses();
+            
             
 
 

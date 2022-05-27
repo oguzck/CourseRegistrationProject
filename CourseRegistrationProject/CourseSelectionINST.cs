@@ -13,7 +13,7 @@ namespace CourseRegistrationProject
 {
     public partial class CourseSelectionINST : UserControl
     {
-        public CourseSelectionINST()
+        public CourseSelectionINST(string ID)
         {
             InitializeComponent();
             GetCourses();

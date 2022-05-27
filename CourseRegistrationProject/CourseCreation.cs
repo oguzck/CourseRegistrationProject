@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace CourseRegistrationProject
 {
@@ -18,7 +19,7 @@ namespace CourseRegistrationProject
         public CourseCreation()
         {
             InitializeComponent();
-            String ConnectionString = "Data Source = DESKTOP-NBBUC0A ; Initial Catalog = CRS; Integrated Security = True";
+            String ConnectionString = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
             conn = new SqlConnection(ConnectionString);
             com = new SqlCommand();
         }

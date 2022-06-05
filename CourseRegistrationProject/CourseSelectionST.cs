@@ -24,14 +24,24 @@ namespace CourseRegistrationProject
             String ConnectionString = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
             conn = new SqlConnection(ConnectionString);
             com = new SqlCommand();
-            GetCourses();
+            //GetCourses();
 
         }
 
         private void GetCourses()
         {
             conn.Open();
-            string Query = "SELECT * FROM COURSE WHERE COURSE_CODE NOT IN (SELECT COURSE_CODE FROM ENROLL_STD_CRS WHERE STUDENT_ID = '"+_id+"') ";
+            string Query = "";
+            if(cbTerm.SelectedIndex == 0)
+            {
+                 Query = "SELECT * FROM COURSE WHERE COURSE_TERM = 'Spring' AND COURSE_CODE NOT IN (SELECT COURSE_CODE FROM ENROLL_STD_CRS WHERE STUDENT_ID = '" + _id + "') ";
+
+            }
+            else
+            {
+                 Query = "SELECT * FROM COURSE WHERE COURSE_TERM = 'Fall' AND COURSE_CODE NOT IN (SELECT COURSE_CODE FROM ENROLL_STD_CRS WHERE STUDENT_ID = '" + _id + "') ";
+
+            }
             SqlCommand cmd = new SqlCommand(Query, conn);
             var reader = cmd.ExecuteReader();
             DataTable table = new DataTable();
@@ -52,6 +62,7 @@ namespace CourseRegistrationProject
         {
             conn.Open();
             com.Connection = conn;
+            bool dataInsterted = false;
             for (int i = 0; i<dataGridView1.Rows.Count; ++i)
             {
                 if(dataGridView1.Rows[i].Cells[0].Value is true)
@@ -59,12 +70,48 @@ namespace CourseRegistrationProject
                     string crsid = dataGridView1.Rows[i].Cells[1].Value.ToString();
                     com.CommandText = "INSERT INTO ENROLL_STD_CRS VALUES ('" + _id + "','" + crsid + "','"+ DateTime.Now.Year.ToString()+"')";
                     com.ExecuteNonQuery();
+                    dataInsterted = true;
                     
                 }
+                
             }
-            MessageBox.Show("Enrollement Succesfull");
+            if(dataInsterted is true)
+                MessageBox.Show("Enrollement Succesfull");
             conn.Close();
             GetCourses();
+        }
+
+ 
+        private void cbTerm_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GetCourses();
+        }
+
+        private void btnCommit_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string Query = "";
+            if (cbTerm.SelectedIndex == 0)
+            {
+                 Query = "SELECT  SUM(C.COURSE_PRICE) AS TOTALCOAST FROM ENROLL_STD_CRS AS ER INNER JOIN COURSE AS C ON C.COURSE_CODE = ER.COURSE_CODE WHERE ER.STUDENT_ID = '"+_id+"' and C.COURSE_TERM = 'Spring'";
+
+            }
+            else
+            {
+                 Query = "SELECT  SUM(C.COURSE_PRICE) AS TOTALCOAST FROM ENROLL_STD_CRS AS ER INNER JOIN COURSE AS C ON C.COURSE_CODE = ER.COURSE_CODE WHERE ER.STUDENT_ID = '"+_id+"' and C.COURSE_TERM = 'Fall'";
+
+            }
+            SqlCommand cmd = new SqlCommand(Query, conn);
+            var reader = cmd.ExecuteReader();
+            DataTable table = new DataTable();
+            table.Load(reader);
+            Object o = table.Rows[0]["TOTALCOAST"];
+            int TotalValue = Convert.ToInt32(o);
+            com.Connection = conn;
+            com.CommandText = "INSERT INTO PAYMENTS VALUES ("+TotalValue+ ",'"+ DateTime.Now+ "','"+_id+"')";
+            com.ExecuteNonQuery();
+            conn.Close();
+
         }
     }
 }

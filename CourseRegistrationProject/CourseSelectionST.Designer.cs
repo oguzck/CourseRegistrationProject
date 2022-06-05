@@ -33,6 +33,9 @@ namespace CourseRegistrationProject
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.cbTerm = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCommit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +69,7 @@ namespace CourseRegistrationProject
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Choose});
-            this.dataGridView1.Location = new System.Drawing.Point(102, 105);
+            this.dataGridView1.Location = new System.Drawing.Point(102, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(543, 218);
@@ -78,11 +81,45 @@ namespace CourseRegistrationProject
             this.Choose.Name = "Choose";
             this.Choose.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
+            // cbTerm
+            // 
+            this.cbTerm.FormattingEnabled = true;
+            this.cbTerm.Items.AddRange(new object[] {
+            "Spring\t",
+            "Fall"});
+            this.cbTerm.Location = new System.Drawing.Point(184, 105);
+            this.cbTerm.Name = "cbTerm";
+            this.cbTerm.Size = new System.Drawing.Size(121, 23);
+            this.cbTerm.TabIndex = 5;
+            this.cbTerm.SelectedIndexChanged += new System.EventHandler(this.cbTerm_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(102, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Term : ";
+            // 
+            // btnCommit
+            // 
+            this.btnCommit.Location = new System.Drawing.Point(521, 375);
+            this.btnCommit.Name = "btnCommit";
+            this.btnCommit.Size = new System.Drawing.Size(124, 23);
+            this.btnCommit.TabIndex = 7;
+            this.btnCommit.Text = "Commit Selection";
+            this.btnCommit.UseVisualStyleBackColor = true;
+            this.btnCommit.Click += new System.EventHandler(this.btnCommit_Click);
+            // 
             // CourseSelectionST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
+            this.Controls.Add(this.btnCommit);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbTerm);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
@@ -99,5 +136,8 @@ namespace CourseRegistrationProject
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
+        private System.Windows.Forms.ComboBox cbTerm;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCommit;
     }
 }

@@ -9,19 +9,29 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace CourseRegistrationProject
 {
     public partial class MontlyPayments : UserControl
     {
+        SqlConnection conn;
+        SqlCommand com;
+        string _id;
+
         public MontlyPayments(String ID)
         {
             InitializeComponent();
-            MessageBox.Show("You have preliminary payment : 1000$");
-
+            _id = ID;
+            String ConnectionString = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
+            conn = new SqlConnection(ConnectionString);
+            com = new SqlCommand();
 
         }
+        private void getPayments()
+        {
 
+        }
 
     }
    

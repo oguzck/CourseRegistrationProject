@@ -33,11 +33,6 @@ namespace CourseRegistrationProject
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.CourseId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Term = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +45,7 @@ namespace CourseRegistrationProject
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label1
             // 
@@ -69,11 +65,7 @@ namespace CourseRegistrationProject
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Choose,
-            this.CourseId,
-            this.CourseName,
-            this.Term,
-            this.Price});
+            this.Choose});
             this.dataGridView1.Location = new System.Drawing.Point(102, 105);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
@@ -86,41 +78,11 @@ namespace CourseRegistrationProject
             this.Choose.Name = "Choose";
             this.Choose.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // CourseId
-            // 
-            this.CourseId.HeaderText = "Course ID";
-            this.CourseId.Name = "CourseId";
-            // 
-            // CourseName
-            // 
-            this.CourseName.HeaderText = "Course Name";
-            this.CourseName.Name = "CourseName";
-            // 
-            // Term
-            // 
-            this.Term.HeaderText = "Term";
-            this.Term.Name = "Term";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 375);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
-            // 
             // CourseSelectionST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
@@ -137,10 +99,5 @@ namespace CourseRegistrationProject
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CourseId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CourseName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Term;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.Label label2;
     }
 }

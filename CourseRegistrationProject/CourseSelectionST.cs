@@ -108,7 +108,7 @@ namespace CourseRegistrationProject
             Object o = table.Rows[0]["TOTALCOAST"];
             int TotalValue = Convert.ToInt32(o);
             com.Connection = conn;
-            com.CommandText = "INSERT INTO PAYMENTS VALUES ("+TotalValue+ ",'"+ DateTime.Now+ "','"+_id+"')";
+            com.CommandText = "INSERT INTO PAYMENTS VALUES ("+TotalValue+ ",'"+ DateTime.Now+ "','"+_id+"','"+TotalValue/4+ "','" + TotalValue/4 + "','" + TotalValue/4 + "')";
             com.ExecuteNonQuery();
             conn.Close();
 

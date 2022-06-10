@@ -30,16 +30,14 @@ namespace CourseRegistrationProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstructorInfo));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbCourses = new System.Windows.Forms.ComboBox();
             this.lblTerm = new System.Windows.Forms.Label();
             this.CurrentTerm = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblDepartment = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,20 +45,20 @@ namespace CourseRegistrationProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbCourses
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(135, 269);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 27;
+            this.cbCourses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbCourses.FormattingEnabled = true;
+            this.cbCourses.Location = new System.Drawing.Point(135, 269);
+            this.cbCourses.Name = "cbCourses";
+            this.cbCourses.Size = new System.Drawing.Size(121, 28);
+            this.cbCourses.TabIndex = 27;
             // 
             // lblTerm
             // 
             this.lblTerm.AutoSize = true;
             this.lblTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTerm.Location = new System.Drawing.Point(395, 272);
+            this.lblTerm.Location = new System.Drawing.Point(409, 201);
             this.lblTerm.Name = "lblTerm";
             this.lblTerm.Size = new System.Drawing.Size(51, 20);
             this.lblTerm.TabIndex = 26;
@@ -70,7 +68,7 @@ namespace CourseRegistrationProject
             // 
             this.CurrentTerm.AutoSize = true;
             this.CurrentTerm.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CurrentTerm.Location = new System.Drawing.Point(281, 267);
+            this.CurrentTerm.Location = new System.Drawing.Point(281, 196);
             this.CurrentTerm.Name = "CurrentTerm";
             this.CurrentTerm.Size = new System.Drawing.Size(117, 25);
             this.CurrentTerm.TabIndex = 25;
@@ -85,16 +83,6 @@ namespace CourseRegistrationProject
             this.label6.Size = new System.Drawing.Size(191, 29);
             this.label6.TabIndex = 24;
             this.label6.Text = "Instructor Information";
-            // 
-            // lblDepartment
-            // 
-            this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDepartment.Location = new System.Drawing.Point(395, 201);
-            this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(51, 20);
-            this.lblDepartment.TabIndex = 23;
-            this.lblDepartment.Text = "label6";
             // 
             // lblAge
             // 
@@ -135,16 +123,6 @@ namespace CourseRegistrationProject
             this.label5.Size = new System.Drawing.Size(77, 25);
             this.label5.TabIndex = 19;
             this.label5.Text = "Courses :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(281, 195);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 25);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Department : ";
             // 
             // label3
             // 
@@ -191,16 +169,14 @@ namespace CourseRegistrationProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbCourses);
             this.Controls.Add(this.lblTerm);
             this.Controls.Add(this.CurrentTerm);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.lblDepartment);
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -215,16 +191,14 @@ namespace CourseRegistrationProject
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbCourses;
         private System.Windows.Forms.Label lblTerm;
         private System.Windows.Forms.Label CurrentTerm;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblDepartment;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

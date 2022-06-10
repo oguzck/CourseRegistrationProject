@@ -24,7 +24,7 @@ namespace CourseRegistrationProject
             String ConnectionString = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
             conn = new SqlConnection(ConnectionString);
             com = new SqlCommand();
-            //GetCourses();
+            
 
         }
 

@@ -34,7 +34,7 @@ namespace CourseRegistrationProject
             var reader = cmd.ExecuteReader();
             DataTable table = new DataTable();
             table.Load(reader);
-            //string Query2 = " SELECT COURSE_NAME FROM COURSE AS C INNER JOIN ENROLL_STD_CRS AS ER ON ER.COURSE_CODE = C.COURSE_CODE INNER JOIN STUDENT AS ST ON ST.STUDENT_ID = ER.STUDENT_ID WHERE ST.STUDENT_ID = '"+_id+"'";
+          
             com = conn.CreateCommand();
             com.CommandType = CommandType.Text;
             com.CommandText = " SELECT COURSE_NAME FROM COURSE AS C INNER JOIN ENROLL_STD_CRS AS ER ON ER.COURSE_CODE = C.COURSE_CODE INNER JOIN STUDENT AS ST ON ST.STUDENT_ID = ER.STUDENT_ID WHERE ST.STUDENT_ID = '" + _id + "'";

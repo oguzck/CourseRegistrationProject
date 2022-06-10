@@ -38,9 +38,9 @@ namespace CourseRegistrationProject
             string message = "";
             string gender="";
             string tarih = Convert.ToDateTime(dtpDateOfBirth.Value).ToString("yyyy-MM-dd");
-            if (rbFemale.Checked = true)
+            if (rbFemale.Checked == true)
                 gender = "Female";
-            if (rbMale.Checked = true)
+            else if (rbMale.Checked == true)
                 gender = "Male";
             if (cbType.SelectedIndex == 0)
             {
@@ -67,6 +67,6 @@ namespace CourseRegistrationProject
             
         }
 
-     
+
     }
 }

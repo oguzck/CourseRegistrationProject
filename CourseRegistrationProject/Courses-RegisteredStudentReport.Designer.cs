@@ -30,9 +30,6 @@ namespace CourseRegistrationProject
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.CourseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumberOfRegisteredStudent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -40,33 +37,11 @@ namespace CourseRegistrationProject
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CourseID,
-            this.CourseName,
-            this.NumberOfRegisteredStudent});
             this.dataGridView1.Location = new System.Drawing.Point(144, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(494, 186);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // CourseID
-            // 
-            this.CourseID.HeaderText = "Course ID";
-            this.CourseID.Name = "CourseID";
-            this.CourseID.Width = 150;
-            // 
-            // CourseName
-            // 
-            this.CourseName.HeaderText = "Course Name";
-            this.CourseName.Name = "CourseName";
-            this.CourseName.Width = 150;
-            // 
-            // NumberOfRegisteredStudent
-            // 
-            this.NumberOfRegisteredStudent.HeaderText = "Number Of Registered Student";
-            this.NumberOfRegisteredStudent.Name = "NumberOfRegisteredStudent";
-            this.NumberOfRegisteredStudent.Width = 150;
             // 
             // label1
             // 
@@ -96,9 +71,6 @@ namespace CourseRegistrationProject
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CourseID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CourseName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumberOfRegisteredStudent;
         private System.Windows.Forms.Label label1;
     }
 }

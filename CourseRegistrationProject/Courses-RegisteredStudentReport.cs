@@ -33,8 +33,12 @@ namespace CourseRegistrationProject
             dataGridView1.DataSource = table;
             conn.Close();
             dataGridView1.Columns[0].HeaderText = "Course Code";
+            
             dataGridView1.Columns[1].HeaderText = "Course Name";
+            dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             dataGridView1.Columns[2].HeaderText = "Number Of Registered Students";
+            dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+
         }
 
 

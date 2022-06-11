@@ -30,43 +30,22 @@ namespace CourseRegistrationProject
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.InstructorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InstructorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GivenCourse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.InstructorID,
-            this.InstructorName,
-            this.GivenCourse});
-            this.dataGridView1.Location = new System.Drawing.Point(196, 112);
+            this.dataGridView1.Location = new System.Drawing.Point(207, 110);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(403, 232);
+            this.dataGridView1.Size = new System.Drawing.Size(397, 232);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // InstructorID
-            // 
-            this.InstructorID.HeaderText = "Instructor ID ";
-            this.InstructorID.Name = "InstructorID";
-            this.InstructorID.Width = 120;
-            // 
-            // InstructorName
-            // 
-            this.InstructorName.HeaderText = "Instructor Name";
-            this.InstructorName.Name = "InstructorName";
-            this.InstructorName.Width = 120;
-            // 
-            // GivenCourse
-            // 
-            this.GivenCourse.HeaderText = "Given Course";
-            this.GivenCourse.Name = "GivenCourse";
-            this.GivenCourse.Width = 120;
             // 
             // label1
             // 
@@ -96,9 +75,6 @@ namespace CourseRegistrationProject
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn InstructorID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn InstructorName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GivenCourse;
         private System.Windows.Forms.Label label1;
     }
 }

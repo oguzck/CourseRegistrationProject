@@ -30,47 +30,22 @@ namespace CourseRegistrationProject
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Term = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalCoast = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.StudentID,
-            this.StudentName,
-            this.Term,
-            this.TotalCoast});
-            this.dataGridView1.Location = new System.Drawing.Point(180, 109);
+            this.dataGridView1.Location = new System.Drawing.Point(229, 106);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(445, 218);
+            this.dataGridView1.Size = new System.Drawing.Size(348, 218);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // StudentID
-            // 
-            this.StudentID.HeaderText = "Student ID";
-            this.StudentID.Name = "StudentID";
-            // 
-            // StudentName
-            // 
-            this.StudentName.HeaderText = "Student Name";
-            this.StudentName.Name = "StudentName";
-            // 
-            // Term
-            // 
-            this.Term.HeaderText = "Term";
-            this.Term.Name = "Term";
-            // 
-            // TotalCoast
-            // 
-            this.TotalCoast.HeaderText = "Total Expense";
-            this.TotalCoast.Name = "TotalCoast";
             // 
             // label1
             // 
@@ -99,10 +74,6 @@ namespace CourseRegistrationProject
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Term;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalCoast;
         private System.Windows.Forms.Label label1;
     }
 }

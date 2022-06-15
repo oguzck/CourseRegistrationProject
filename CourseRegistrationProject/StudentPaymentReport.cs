@@ -29,7 +29,7 @@ namespace CourseRegistrationProject
             SqlCommand cmd = new SqlCommand(Query, conn);
             var reader = cmd.ExecuteReader();
             DataTable table = new DataTable();
-            table.Load(reader);
+            table.Load(reader); 
             dataGridView1.DataSource = table;
             conn.Close();
             dataGridView1.Columns[0].HeaderText = "Student Id ";

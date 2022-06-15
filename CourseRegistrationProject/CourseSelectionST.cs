@@ -108,9 +108,10 @@ namespace CourseRegistrationProject
             Object o = table.Rows[0]["TOTALCOAST"];
             int TotalValue = Convert.ToInt32(o);
             com.Connection = conn;
-            com.CommandText = "INSERT INTO PAYMENTS VALUES ("+TotalValue+ ",'"+ DateTime.Now+ "','"+_id+"','"+TotalValue/4+ "','" + TotalValue/4 + "','" + TotalValue/4 + "')";
+            com.CommandText = "INSERT INTO PAYMENTS (TOTAL_COAST,PAYMENT_START_DATE,STUDENT_ID,MONTH1,MONTH2,MONTH3)  VALUES  ('"+TotalValue+"',GETDATE(),'" + _id+"','"+TotalValue/4+ "','" + TotalValue/4 + "','" + TotalValue/4 + "')";
             com.ExecuteNonQuery();
             conn.Close();
+            MessageBox.Show("Your Payment Record Is Created");
 
         }
     }
